@@ -247,7 +247,7 @@ public void refresh() throws BeansException, IllegalStateException {
 
 #### 2.1、prepareRefresh()
 
-刷新ApplicationContext之前设置当前事件以及初始化属性参数
+刷新ApplicationContext之前设置当前时间以及初始化属性参数
 
 
 
@@ -295,7 +295,6 @@ public void refresh() throws BeansException, IllegalStateException {
 #### 2.5、invokeBeanFactoryPostProcessors(beanFactory);
 
 * 实例化并调用所有被注册的BeanFactoryPostProcessor，这些PostProcessor在prepareBeanFactory() BeanFactory的预处理过程中被添加进BeanFactory
-* @Configuration注解的配置在这一步创建Beandefi
 
 
 
