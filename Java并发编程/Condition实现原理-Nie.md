@@ -13,11 +13,6 @@ Condition`是在`java 1.5`中才出现的，它用来替代传统的`Object`的`
 使用示例代码：
 
 ```java
-/**
- * ReentrantLock 实现源码学习
- * @author 一枝花算不算浪漫
- * @date 2020/4/28 7:20
- */
 public class ReentrantLockDemo {
     static ReentrantLock lock = new ReentrantLock();
 
