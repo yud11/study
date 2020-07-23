@@ -75,7 +75,7 @@ ObjectMonitor() {
 
 #### CAS自旋
 
-不多说，懂得都懂，synchronized的等待策略从原来的阻塞变为了进行CAS自旋不断的请求锁
+synchronized的等待策略从原来的阻塞变为了进行CAS自旋不断的请求锁
 
 
 

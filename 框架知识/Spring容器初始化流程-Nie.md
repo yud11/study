@@ -673,7 +673,7 @@ public Object getSingleton(String beanName, ObjectFactory<?> singletonFactory) {
 
 #### <font color='#1E90FF'>3.14、getObjectForBeanInstance</font>
 
-<font color='red' size='4'>疑问：该方法重写了父类的getObjectForBeanInstance方法，对当前Bean的依赖进行了判断并调用registerDependentBean进行了依赖的注入，猜测这里和解决循环依赖相关</font></font>
+<font color='red' size='4'>疑问：该方法重写了父类的getObjectForBeanInstance方法，对当前Bean的依赖进行了判断并调用registerDependentBean进行了依赖的注入，猜测这里和解决循环依赖相关</font>
 
 ``` java
 @Override

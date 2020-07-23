@@ -188,17 +188,17 @@ Server:
 #### docker images 镜像命令
 
 * docker images：列出本地主机上的镜像
-
 * -a ：列出本地所有的镜像（含中间映像层）
 * -q ：只显示镜像ID
 * --digests ：显示镜像的摘要信
 * --no-trunc ：显示完整的镜像信息
 * docker search [OPTIONS] 镜像名字：在 [资源仓库](https://hub.docker.com )上搜索对应的镜像
 * docker pull [OPTIONS] 镜像名字：拉取镜像
-
 * docker rmi  -f 镜像ID：删除单个镜像
 * docker rmi -f 镜像名1:TAG 镜像名2:TAG ：删除多个镜像
 * docker rmi -f $(docker images -qa)：删除全部镜像
+* docker images  -f [condition] ：根据条件查询本地镜像
+* docker images  -f=reference='abc*'：查询以abc为开头的镜像 
 
 #### docker run [OPTIONS] 
 
