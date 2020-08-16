@@ -2,7 +2,7 @@
 
 ​		从语法角度来说，sychronized语义为可以将一切不为null的对象作为锁，从而实现同步机制（可见性，原子性，有序性），在HotSpot JVM实现中，锁有个专门的名字：**对象监视器（Object Monitor）**每一个非空的java对象都有一个monitor对象与之关联。如果我们去反编译一段被sychronized修饰的代码片段，我们会发现sychronized似乎是使用了一个monitor对象来控制同步代码的入口和出口
 
-![](images/Synchronized高频面试题-1.webp)
+![img](Synchronized高频面试题-Nie.assets/apl5n-ykhie.jpg)
 
 **Synchronized总共有三种用法**：
 
@@ -20,15 +20,15 @@
 
 ​		锁这个概念是一个抽象的概念，在这里我们可以理解为对象的一种状态，在JVM中，对象的存储状态可以分为三个部分：对象头，实例数据，对齐填充，我们的重点是**对象头**。
 
-![](images/Synchronized高频面试题-2.webp)
+![img](Synchronized高频面试题-Nie.assets/az7pu-v1w2b.jpg)
 
 > 对象头信息是与对象自身定义的数据无关的额外存储成本，但是考虑到虚拟机的空间效率，**Mark Word被设计成一个非固定的数据结构以便在极小的空间内存存储尽量多的数据，它会根据对象的状态复用自己的存储空间**，也就是说，**Mark Word会随着程序的运行发生变化，(32位)可能变化为存储以下4种数据**：
 
-![](images/Synchronized高频面试题-3.webp)
+![img](Synchronized高频面试题-Nie.assets/azjnu-z93l4.jpg)
 
 在64位虚拟机下，**Mark Word是64bit大小的**，其存储结构如下：
 
-![](images/Synchronized高频面试题-4.webp)
+![img](Synchronized高频面试题-Nie.assets/a329y-njadb.jpg)
 
 > 对象头的最后两位存储了锁的标志位，**01是初始状态，未加锁**，其对象头里存储的是对象本身的哈希码，随着锁级别的不同，对象头里会存储不同的内容。**偏向锁存储的是当前占用此对象的线程ID**；**而轻量级则存储指向线程栈中锁记录的指针**。从这里我们可以看到，“锁”这个东西，**可能是个锁记录+对象头里的引用指针**（判断线程是否拥有锁时将线程的锁记录地址和对象头里的指针地址比较)，**也可能是对象头里的线程ID**（判断线程是否拥有锁时将线程的ID和对象头里存储的线程ID比较）。
 
