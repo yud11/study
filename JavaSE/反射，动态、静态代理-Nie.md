@@ -175,9 +175,9 @@ private static Method searchMethods(Method[] methods,String name,Class<?>[] para
 
 ### 什么是代理模式
 
-> 代理可以看作是对调用目标的一个包装，这样我们对目标代码的调用不是直接发生的，而是通过代理完成。而`jdk` 提供的反射机制则是动态代理的具体体现。
-
-
+> 代理可以看作是对调用目标的一个包装，这样我们对目标代码的调用不是直接发生的，而是通过代理完成。而`jdk` 提供的动态代理的底层是通过反射实现的
+>
+> [动态代理的底层原理](https://blog.csdn.net/tanggao1314/article/details/78131834)
 
 ### 静态代理
 

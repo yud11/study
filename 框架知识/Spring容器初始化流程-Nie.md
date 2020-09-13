@@ -1,4 +1,4 @@
-## <font color='green'>Spring容器初始化流程-Nie</font>
+## Spring容器初始化流程-Nie
 
 
 
@@ -173,7 +173,7 @@ public static Set<BeanDefinitionHolder> registerAnnotationConfigProcessors(..) {
 
 
 
-### <font color='#C71585'>Step2、refresh()</font>
+### Step2、refresh()
 
 > 刷新初始化容器
 
@@ -298,7 +298,7 @@ public void refresh() throws BeansException, IllegalStateException {
 
 
 
-#### <font color='#1E90FF'>2.6、registerBeanPostProcessors(beanFactory)</font>
+#### 2.6、registerBeanPostProcessors(beanFactory)
 
 > 注册Bean的后置处理器，注意这里只注册和实例化BeanPostProcessors，并不执行
 

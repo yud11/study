@@ -2,7 +2,7 @@
 
  下图简单显示了InnoDB的存储引擎的体系架构
 
-![](images/InnoDB存储引擎特性-yudi-1.jpg)
+![](InnoDB存储引擎特性-yudi.assets/InnoDB存储引擎特性-yudi-1.png)
 
 我们知道mysql是单进程多线程的模式来进行工作的，上图也显示了在使用InnoDB引擎的内存池，同时有多个线程在工作，那么下面介绍下这些后台线程。
 
