@@ -1,0 +1,34 @@
+## SortedSet
+
+### 介绍
+
+SortedSet是有序的set集合，在往SortedSet中添加元素时，计算机需要知道具体按照什么进行排序，因此zadd的命令需要携带的参数中包含了一个score，即这个元素的得分，按照元素的得分情况进行从小到大排序，如果得分相同，则按照元素的字典顺序进行排序
+
+### 基础命令
+
+新增、获取所有元素
+
+![1627887470562](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887470562.png)
+
+获取元素个数、获取某个分值区间的元素个数
+
+![1627887549191](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887549191.png)
+
+随机返回若干个元素（无序的）
+
+![1627887692950](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887692950.png)
+
+返回给定分值区间的元素
+
+![1627887806616](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887806616.png)
+
+取出给定元素在集合中的索引位置（排名）
+
+![1627887876473](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887876473.png)
+
+反向排名元素
+
+![1627887930821](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887930821.png)
+
+
+
