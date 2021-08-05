@@ -6,53 +6,53 @@ set数据集合是去重的无序的
 
 给指定key添加成员、显示指定key所有成员（数据量大时谨慎使用）
 
-![1627613478915](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627613478915.png)
+![1627613478915](E:\GithubNote\数据库\images/1627613478915.png)
 
 移除指定key中某个成员
 
-![1627613726036](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627613726036.png)
+![1627613726036](E:\GithubNote\数据库\images/1627613726036.png)
 
 随机移除指定key中一个或多个成员
 
-![1627613835205](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627613835205.png)
+![1627613835205](E:\GithubNote\数据库\images/1627613835205.png)
 
 取两个key的并集
 
-![1627613995680](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627613995680.png)
+![1627613995680](E:\GithubNote\数据库\images/1627613995680.png)
 
 取两个key的并集后将值赋给目标key
 
-![1627614077424](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627614077424.png)
+![1627614077424](E:\GithubNote\数据库\images/1627614077424.png)
 
 取两个key的交集
 
-![1627614172663](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627614172663.png)
+![1627614172663](E:\GithubNote\数据库\images/1627614172663.png)
 
 取两个key的交集后将值赋给目标key
 
-![1627614231815](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627614231815.png)
+![1627614231815](E:\GithubNote\数据库\images/1627614231815.png)
 
 取出两个key中不同的值（具体想取出哪个key的部分就把哪个key放在前面）
 
-![1627614292460](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627614292460.png)
+![1627614292460](E:\GithubNote\数据库\images/1627614292460.png)
 
 随机返回某个key中的一定数量的成员
 
-![1627614590576](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627614590576.png)
+![1627614590576](E:\GithubNote\数据库\images/1627614590576.png)
 
 此命令中携带的数量可以是正数或者负数，同时正数或者负数的数字可以大于或者小于set集合的大小
 
 当数字为正数且小于set集合大小时，会返回集合中随机的不重复满足数量的成员
 
-![1627615312893](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627615312893.png)
+![1627615312893](E:\GithubNote\数据库\images/1627615312893.png)
 
 当数字为正数且大于set集合大小时，会返回集合中所有成员
 
-![1627615397786](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627615397786.png)
+![1627615397786](E:\GithubNote\数据库\images/1627615397786.png)
 
 当数字为负数时，会返回满足数量的随机的存在重复的成员
 
-![1627615711144](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627615711144.png)
+![1627615711144](E:\GithubNote\数据库\images/1627615711144.png)
 
 应用场景：抽奖
 
@@ -60,5 +60,5 @@ set数据集合是去重的无序的
 
 解决方案：将人添加到一个set集合中，使用spop，弹出的人即中奖者且不会参加下次抽奖
 
-![1627645834061](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627645834061.png)
+![1627645834061](E:\GithubNote\数据库\images/1627645834061.png)
 

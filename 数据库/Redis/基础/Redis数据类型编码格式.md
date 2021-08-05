@@ -30,13 +30,13 @@
 Redis中字符串对象的编码可以是int、raw、embstr中的某一种：
 
 - int编码： 保存long 型的64位有符号整数 
-  ![1627479620135](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627479620135.png)
+  ![1627479620135](E:\GithubNote\数据库\images/1627479620135.png)
 
 - embstr编码：保存长度小于44字节的字符串
-  ![1627479755904](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627479755904.png)
+  ![1627479755904](E:\GithubNote\数据库\images/1627479755904.png)
 
 - raw编码：保存长度大于44字节的字符串
-  ![1627479702834](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627479702834.png)
+  ![1627479702834](E:\GithubNote\数据库\images/1627479702834.png)
 
   
 

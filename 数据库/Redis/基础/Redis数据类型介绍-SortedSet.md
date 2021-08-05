@@ -8,27 +8,27 @@ SortedSet是有序的set集合，在往SortedSet中添加元素时，计算机�
 
 新增、获取所有元素
 
-![1627887470562](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887470562.png)
+![1627887470562](E:\GithubNote\数据库\images/1627887470562.png)
 
 获取元素个数、获取某个分值区间的元素个数
 
-![1627887549191](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887549191.png)
+![1627887549191](E:\GithubNote\数据库\images/1627887549191.png)
 
 随机返回若干个元素（无序的）
 
-![1627887692950](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887692950.png)
+![1627887692950](E:\GithubNote\数据库\images/1627887692950.png)
 
 返回给定分值区间的元素
 
-![1627887806616](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887806616.png)
+![1627887806616](E:\GithubNote\数据库\images/1627887806616.png)
 
 取出给定元素在集合中的索引位置（排名）
 
-![1627887876473](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887876473.png)
+![1627887876473](E:\GithubNote\数据库\images/1627887876473.png)
 
 反向排名元素
 
-![1627887930821](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627887930821.png)
+![1627887930821](E:\GithubNote\数据库\images/1627887930821.png)
 
 
 

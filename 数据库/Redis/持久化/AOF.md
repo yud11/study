@@ -8,13 +8,13 @@
 
 ​	当客户端发送一条写命令到服务端后，服务端执行完成后，判断aof程序是否已经打开，若打开了aof程序，命令参数都会被传给aof程序，此时aof程序拿到命令的一些参数后会将命令的协议内容追加到服务器状态的**aof_buf缓冲区**，当服务端每次结束事件循环之前会调用**flushAppendOnlyFile**函数，考虑是否需要将aof_buf缓冲区中的内容写入和保存到aof文件中。这个考虑是基于服务器配置的appendfsync选项值（**always、everysec、no**）来决定。
 
-![1628062871197](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1628062871197.png)
+![1628062871197](E:\GithubNote\数据库\images/1628062871197.png)
 
 ### 载入与数据还原过程
 
 ​	当服务器启动aof载入程序时，会创建一个不带网络连接的伪客户端，然后从aof文件中分析并读取一条写命令，使用伪客户端执行写命令，一直反复，直到aof文件中所有写命令被执行完为止。
 
-![1628063735728](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1628063735728.png)
+![1628063735728](E:\GithubNote\数据库\images/1628063735728.png)
 
 ### 思考
 
@@ -32,11 +32,11 @@
 
 - 手动执行 bgrewriteaof 触发AOF重写
 - 在redis.conf文件中配置重写的条件，如：
-  ![1628065482571](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1628065482571.png)
+  ![1628065482571](E:\GithubNote\数据库\images/1628065482571.png)
 
 #### 重写过程
 
-![1628067910291](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1628067910291.png)
+![1628067910291](E:\GithubNote\数据库\images/1628067910291.png)
 
 ​	主进程fork一条子进程，子进程进行aof重写期间，主进程可以继续处理请求，子进程带有主进程的数据副本，子进程通过读取数据库状态中的数据将写命令追加到新aof文件中。
 

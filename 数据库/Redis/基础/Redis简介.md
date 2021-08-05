@@ -28,5 +28,5 @@
 
 Redis与Memcache同样是key-value型数据库，但是Memcache的value没有数据类型，这样就会带来一个问题，当value的值比较复杂，Memcache的server端通过网卡I/O返回的数据需要Memcache的client端实现的代码去解码，client端对这些未知的数据解码比较费力，但是redis的value都确定类型，server端对每种类型都有自己的方法，index()、lpop()等，这样client端接受到的数据就无需解码。
 
-![1627386226717](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627386226717.png)
+![1627386226717](E:\GithubNote\数据库\images/1627386226717.png)
 

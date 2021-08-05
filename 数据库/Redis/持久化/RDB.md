@@ -32,7 +32,7 @@
 
 ​	当服务器中配置了上面的save选项后，在内存中结构如下图：
 
-![1627991260264](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627991260264.png)
+![1627991260264](E:\GithubNote\数据库\images/1627991260264.png)
 
 ​	其中saveparams数组中存了save条件，每个save条件存了seconds以及changes，除此之外，服务器状态还维持一个dirty计数器，记录了距离上一次SAVE或BGSAVE命令成功之后服务器对数据库状态进行了多少次修改；lastsave属性则记录了上一次SAVE或BGSAVE命令执行成功的时间。
 
@@ -44,7 +44,7 @@
 
 ​	首先会从主进程中fork一个子进程，fork之后，kernel会把主进程的所有内存页的权限都设置为read-only，然后主进程与子进程的都指向同一片内存空间，当两个进程都只进行读操作时，相安无事；当在备份过程中，主进程对k2这个键的值进行了修改操作，cpu硬件检测到该内存片只有read-only的权限，便会触发页异常中断(page-fault)，陷入kernel的一个中断例程，中断例程中，kernel就会把触发异常的页复制一份，父子进程各自持有独立的一份，这就是写时复制。
 
-![1627993033577](C:/Users/zxw/AppData/Roaming/Typora/typora-user-images/1627993033577.png)
+![1627993033577](E:\GithubNote\数据库\images/1627993033577.png)
 
 ####  CopyOnWrite的好处
 
