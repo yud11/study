@@ -91,8 +91,8 @@ git remote set-url origin https://<your_token>@[github.com/](http://github.com/)
 本地不删除.idea文件，并且将github上面的.idea文件删除的操作步骤如下
 
 	1. git rm -r --cached .idea 删除git cache里面的文件
-	1. git commit -m " 删除多余文件夹 .idea"
-	1. git push -u origin master push到github上
+	2. git commit -m " 删除多余文件夹 .idea"
+	3. git push -u origin master push到github上
 
 
 
