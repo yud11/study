@@ -82,6 +82,10 @@ git pull == git fetch + git merge  ： 会自动将远程的分支合并到本�
 
 ## 本地与github建立链接
 
+先clone代码，再建立连接
+
+git clone <代码路径>
+
 自从 21 年 8 月 13 后不再支持用户名密码的方式验证了，需要创建个人访问令牌
 
 git remote set-url origin https://<your_token>@[github.com/](http://github.com/)<USERNAME>/<REPO>.git
