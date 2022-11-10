@@ -76,7 +76,9 @@ git pull == git fetch + git merge  ： 会自动将远程的分支合并到本�
 
 - 在dev分支上开发， 使用get fetch 获取远程dev分支(此时产生一个 FETCH_HEAD)分支，然后在dev上merge  FETCH_HEAD，解决冲突后提交dev到远程，删除FETCH_HEAD.
 
+git status 查看仓库状态 可以本地仓库是否被修改和具体被修改的文件
 
+git diff 查看被修改的内容
 
 # Git问题
 
