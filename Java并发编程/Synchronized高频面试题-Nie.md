@@ -10,7 +10,7 @@
 
 ![image-20200903100305107](Synchronized高频面试题-Nie.assets/image-20200903100305107.png)
 
-同步方法是依靠方法修饰符上的flag——ACC_SYNCHRONIZED来完成的，虽然在编译的结果中没有出现Monitor监视器对象，但实际上这是一种隐式调用的方式来对方法进行同步处理，底层还是通过Monitor对象来实现的
+​		同步方法是依靠方法修饰符上的flag——ACC_SYNCHRONIZED来完成的，虽然在编译的结果中没有出现Monitor监视器对象，但实际上这是一种隐式调用的方式来对方法进行同步处理，底层还是通过Monitor对象来实现的
 
 
 

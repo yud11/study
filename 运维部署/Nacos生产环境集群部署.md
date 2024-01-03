@@ -7,7 +7,7 @@
 1. 64 bit OS Linux/Unix/Mac，推荐使用Linux系统。
 2. 64 bit JDK 1.8+；[下载](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).[配置](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/)。
 3. Maven 3.2.x+；[下载](https://maven.apache.org/download.cgi).[配置](https://maven.apache.org/settings.html)。
-4. 3个或3个以上Nacos节点才能构成集群。./bin/kafka-storage.sh format -t <uuid> -c ./config/kraft/server.properties
+4. 3个或3个以上Nacos节点才能构成集群。
 
 ### 集群部署架构图
 

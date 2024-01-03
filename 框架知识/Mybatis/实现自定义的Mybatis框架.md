@@ -1,4 +1,4 @@
-# 实现自定义的 类Mybatis 框架
+# 实现自定义的 Mybatis 框架
 
 ## 自定义Mybatis概述
 
