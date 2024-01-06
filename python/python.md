@@ -288,3 +288,44 @@ list1[1:] =  list2 # 将1索引之后的元素删除，添加list2的所有元�
 print(list1) # [10, 50, 60, 90, 100]
 ```
 
+## 删除
+
+Remove(obj):删除指定元素
+
+Pop(index):删除指定索引元素，不加index，默认删除最后一个元素
+
+切片删除
+
+```python
+list1 = [10,20,30,40]
+list1[1:3] = []
+print(list1) # [10,40]
+```
+
+Clear()：清除列表
+
+del ：删除列表
+
+## 排序
+
+```python
+'''
+sort（）：默认升序,对原列表进行排序
+sorted():生成新的列表，不对原列表进行排序
+'''
+lst.sort(reverse = True) # 降序
+lst1 =  sorted(lst) 
+```
+
+## 列表生成式
+
+ 语法格式：[表示列表元素的表达式 for 自定义变量 in 可迭代对象]
+
+```python
+lst = [i*i for i in range(1,10)]
+```
+
+# 字典
+
+## 字典特点
+
